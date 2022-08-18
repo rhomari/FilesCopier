@@ -22,9 +22,9 @@ namespace FilesCopier
         }
         static List<string> GetFiles(string rootdirectory,string searchpattern)
         {
-            string[] directories = Directory.GetFiles(rootdirectory,searchpattern,SearchOption.AllDirectories);
+            string[] files = Directory.GetFiles(rootdirectory,searchpattern,SearchOption.AllDirectories);
 
-            return directories.ToList();
+            return files.ToList();
         }
         static List<string> BackupFiles(string srcpath, string dstpath)
         {
